@@ -1,8 +1,2 @@
-# SensorsProject# SensorsProject
-Hello. This is where We will be putting our work. Please create your branches. I think everyone can take one module and make software for said module.<br>
-Modules:<br>
-Tempareture sensor<br>
-Humidity sensor<br>
-Photoresistor<br>
-LCD display<br>
-black ice detection 
+# SensorsProject# 
+This is my code for Discovery board. It serves as SPI Master. I calls Bluepill board and asks for temp. You can use it to do something similar for humidity or light intensity. 
