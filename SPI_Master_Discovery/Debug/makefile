@@ -60,8 +60,8 @@ all: main-build
 main-build: SPI_Master_Discovery.elf secondary-outputs
 
 # Tool invocations
-SPI_Master_Discovery.elf SPI_Master_Discovery.map: $(OBJS) $(USER_OBJS) E:\STM\Forbot\SPI_Master_Discovery\STM32F051R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "SPI_Master_Discovery.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"E:\STM\Forbot\SPI_Master_Discovery\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI_Master_Discovery.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+SPI_Master_Discovery.elf SPI_Master_Discovery.map: $(OBJS) $(USER_OBJS) E:\EiT\Sensory\Master\SensorsProject\SPI_Master_Discovery\STM32F051R8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "SPI_Master_Discovery.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"E:\EiT\Sensory\Master\SensorsProject\SPI_Master_Discovery\STM32F051R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI_Master_Discovery.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
