@@ -1,0 +1,4 @@
+../Core/Src/DHT11.c:10:6:microDelay	16	static
+../Core/Src/DHT11.c:16:9:DHT11_Start	32	static
+../Core/Src/DHT11.c:53:9:DHT11_Read	16	static
+../Core/Src/DHT11.c:81:6:DHT11_ReadHumidity	24	static
